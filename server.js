@@ -12,14 +12,14 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: ['https://react-todos-qrhw.onrender.com'],
+        origin: ['https://react-todos-3lbm.onrender.com'],
         methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
     },
 });
 
 // Middleware
 app.use(cors({
-  origin: ['https://react-todos-qrhw.onrender.com'],
+  origin: ['https://react-todos-3lbm.onrender.com'],
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
   credentials: true
 }));
